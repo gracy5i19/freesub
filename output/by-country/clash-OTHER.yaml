@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.70.22
+  server: 104.19.33.25
   port: 443
   udp: true
   type: vless
-  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: luminouspetal.cyou
+  servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /raccoonwsvless
+    path: /tyxyws
     headers:
-      Host: luminouspetal.cyou
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
