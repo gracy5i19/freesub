@@ -5,15 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: pl2.dedushka.top
+  server: 151.241.166.159
   port: 443
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: false
+  type: vless
+  uuid: 7ab86f1f-871e-4de6-9dae-7addf6dc976c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tPhBRGpTbyaPFF3W0wpqncSrdNsV5I-eyM3S9CZoeCQ
+    short-id: 9a26e586f8cadc07
+  servername: pl-hsts.zloygo.com
+  client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 31.133.0.182
+  server: pl1.dedushka.top
   port: 443
   udp: true
   type: trojan
@@ -21,26 +26,12 @@ proxies:
   sni: pl1.dedushka.top
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: 54.37.131.126
-  port: 80
+  server: pl2.dedushka.top
+  port: 443
   udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 2.26.225.89
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  tls: true
-  servername: pl.flen-vpn.xyz
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl2.dedushka.top
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -50,7 +41,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +49,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
-  - 🇵🇱 波兰 (Poland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
