@@ -6,12 +6,24 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "f7ff2e67-b687-4098-a28a-d102c27ba19c",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless"
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
+        }
       }
     },
     {
@@ -33,15 +45,12 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
-      "server": "95.174.68.188",
+      "server": "185.253.116.33",
       "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
+        "path": "/vless"
       }
     },
     {
@@ -52,7 +61,6 @@
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
-        "path": "/",
         "headers": {
           "Host": "uae.unixzone.us"
         }
