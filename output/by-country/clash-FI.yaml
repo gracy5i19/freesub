@@ -28,7 +28,7 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 65.109.212.193
+  server: hw3.divarkhaghazi.com
   port: 465
   udp: true
   type: vless
@@ -36,24 +36,12 @@ proxies:
   tls: true
   servername: hw3.divarkhaghazi.com.
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 2.27.13.152
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 14YyFG_j2yPEUu-gO_G9GqCqRiZ0DIUgzReV9CZvOAk
-    short-id: 0f47ff9aa15e3e30
-  servername: www.nokia.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +50,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,6 +58,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
 rules:
 - MATCH,PROXIES
