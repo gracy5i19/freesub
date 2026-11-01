@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.10.22
+- name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  server: 185.178.208.167
   port: 443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
   tls: true
-  servername: jp3.yohototo.top
+  servername: lorettmay.top
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /blog/posts
     headers:
-      Host: jp3.yohototo.top
+      Host: lorettmay.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
 rules:
 - MATCH,PROXIES
